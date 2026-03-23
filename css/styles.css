@@ -1,0 +1,141 @@
+/* ================= VARIABLES GLOBALES ================= */
+:root {
+    --color-fondo: #0a0c0f;
+    --color-fondo-oscuro: #050708;
+    --color-dorado: #C9A14B;
+    --color-dorado-oscuro: #A07E3A;
+    --color-blanco: #FFFFFF;
+    --color-gris-claro: #E5E7EB;
+    --color-gris: #D4D4D8;
+    --fuente-principal: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* ================= ANIMACIONES GLOBALES ================= */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-up {
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+/* ================= ESTILOS DE SECCIONES (ocultas por defecto) ================= */
+.content-section {
+    display: none;
+    padding: 4rem 5%;
+    background: var(--color-fondo);
+    border-top: 1px solid rgba(201, 161, 75, 0.15);
+    border-bottom: 1px solid rgba(201, 161, 75, 0.15);
+}
+
+.content-section.active {
+    display: block;
+    animation: fadeUp 0.6s ease forwards;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-container h2 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-blanco);
+}
+
+.section-container h2 span {
+    color: var(--color-dorado);
+}
+
+/* Botón de cierre (X) */
+.close-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-section svg {
+    stroke: var(--color-blanco);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.close-section:hover svg {
+    stroke: var(--color-dorado);
+    transform: scale(1.1);
+}
+
+/* Botón principal reutilizable */
+.btn-principal {
+    background: linear-gradient(135deg, var(--color-dorado), var(--color-dorado-oscuro));
+    border: none;
+    color: #0a0c0f;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.9rem 2.5rem;
+    border-radius: 60px;
+    cursor: pointer;
+    box-shadow: 0 20px 30px -10px rgba(201, 161, 75, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    font-family: var(--fuente-principal);
+}
+
+.btn-principal:hover {
+    background: linear-gradient(135deg, #dbb86b, var(--color-dorado));
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 28px 35px -8px rgba(201, 161, 75, 0.5);
+}
+
+/* ================= RESPONSIVE BASE ================= */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 3rem 5%;
+    }
+}

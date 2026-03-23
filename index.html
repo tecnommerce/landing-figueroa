@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Dr. Alejandro Figueroa | Estudio Jurídico</title>
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- ================= SECCIÓN 1: HERO (Cabecera) ================= -->
+    <section class="hero-section">
+        <header>
+            <div class="header-container">
+                <!-- Logo -->
+                <div class="logo fade-in" onclick="scrollToTop()">
+                    <div class="logo-icon"></div>
+                    <div class="logo-text">Figueroa<span>& Asociados</span></div>
+                </div>
+
+                <!-- Menú Hamburguesa -->
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Navegación -->
+                <nav class="nav-links">
+                    <a href="#" onclick="showSection('inicio'); return false;">Inicio</a>
+                    <a href="#" onclick="showSection('servicios'); return false;">Servicios</a>
+                    <a href="#" onclick="showSection('experiencia'); return false;">Experiencia</a>
+                    <a href="#" onclick="showSection('clientes'); return false;">Clientes</a>
+                    <a href="#" class="contacto-link" onclick="showSection('contacto'); return false;">Contacto</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="hero-main" id="hero-main">
+            <div class="hero-text">
+                <h1 class="fade-up delay-1">
+                    Asesoramiento legal <strong>estratégico</strong> para proteger su futuro
+                </h1>
+                <p class="hero-subtitle fade-up delay-2">
+                    Más de 18 años defendiendo los intereses de empresas y profesionales en Tucumán
+                </p>
+                <p class="hero-description fade-up delay-3">
+                    Brindamos soluciones jurídicas confiables, análisis estratégico y representación legal de alto nivel.
+                </p>
+                <button class="btn-principal fade-up delay-4" onclick="window.open('https://wa.me/543813351497?text=Hola%2C%20me%20interesa%20contratar%20una%20landing%20page%20profesional%20para%20mi%20estudio%20jur%C3%ADdico.%20He%20visto%20el%20ejemplo%20del%20Dr.%20Alejandro%20Figueroa%20y%20me%20gustar%C3%ADa%20recibir%20asesoramiento%20para%20un%20proyecto%20similar.', '_blank');">
+                    Solicitar consulta
+                </button>
+            </div>
+
+            <div class="hero-image fade-up delay-2">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Dr. Alejandro Figueroa - Abogado profesional"
+                     loading="lazy">
+                <div class="image-overlay"></div>
+                <div class="image-glow"></div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ================= SECCIÓN: INFORMACIÓN PROFESIONAL ================= -->
+    <section class="info-profesional-section">
+        <div class="container">
+            <!-- Título de sección -->
+            <div class="section-title fade-up delay-1">
+                <h2>Experiencia y compromiso jurídico</h2>
+            </div>
+
+            <div class="profesional-grid">
+                <!-- Columna izquierda: Historia profesional -->
+                <div class="historia fade-up delay-2">
+                    <h3>
+                        Dr. Alejandro Figueroa
+                        <span>Abogado especialista en derecho empresarial</span>
+                    </h3>
+                    
+                    <p>
+                        Con más de 18 años de trayectoria en San Miguel de Tucumán, el Dr. Figueroa ha construido una sólida reputación basada en la ética profesional, el rigor técnico y la cercanía con sus clientes. Egresado de la Facultad de Derecho de la Universidad Nacional de Tucumán, completó su formación con estudios de posgrado en contratos comerciales y litigios complejos.
+                    </p>
+                    
+                    <p>
+                        A lo largo de su carrera ha asesorado a empresas familiares, pymes y corporaciones, protegiendo su patrimonio y brindando seguridad jurídica en cada operación. Su enfoque preventivo y estratégico ha evitado cientos de conflictos legales antes de que lleguen a tribunales.
+                    </p>
+
+                    <div class="frase-destacada">
+                        "La confianza se construye con resultados y transparencia. Cada caso es único y merece una solución a medida."
+                    </div>
+
+                    <!-- Badge decorativo de especialización -->
+                    <div class="experiencia-badge">
+                        <div class="badge-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0a0c0f" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <div class="badge-text">
+                            <strong>Especialista certificado</strong>
+                            Derecho empresarial · Contratos · Patrimonio
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha: Estadísticas animadas -->
+                <div class="estadisticas fade-up delay-3">
+                    <!-- Tarjeta 1: Años de experiencia -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="stat-number count-up" data-target="18">18+</div>
+                        <div class="stat-label">Años de experiencia</div>
+                    </div>
+
+                    <!-- Tarjeta 2: Casos legales -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                            </svg>
+                        </div>
+                        <div class="stat-number count-up" data-target="500">500+</div>
+                        <div class="stat-label">Casos legales</div>
+                    </div>
+
+                    <!-- Tarjeta 3: Clientes asesorados -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number count-up" data-target="350">350+</div>
+                        <div class="stat-label">Clientes asesorados</div>
+                    </div>
+
+                    <!-- Tarjeta 4: Reconocimientos -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M12 2L15 8.5L22 9.5L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9.5L9 8.5L12 2Z"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number count-up" data-target="15">15+</div>
+                        <div class="stat-label">Reconocimientos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ================= SECCIÓN: EMPRESAS QUE CONFÍAN EN NOSOTROS ================= -->
+    <section class="empresas-confian-section">
+        <div class="container">
+            <!-- Encabezado de sección -->
+            <div class="section-header fade-up delay-1">
+                <h2>Empresas que <span>confían en nosotros</span></h2>
+                <p>Más de 350 clientes corporativos han depositado su confianza en nuestro asesoramiento legal</p>
+            </div>
+
+            <!-- Fila de logos con animación -->
+            <div class="logos-container slide-in delay-2">
+                
+                <!-- Toyota -->
+                <div class="logo-item">
+                    <img src="https://1000marcas.net/wp-content/uploads/2019/11/Toyota-Logo-1990.png" 
+                         alt="Toyota"
+                         loading="lazy">
+                </div>
+
+                <!-- Samsung -->
+                <div class="logo-item">
+                    <img src="https://1000marcas.net/wp-content/uploads/2019/12/Samsung-Logo-2015.png" 
+                         alt="Samsung"
+                         loading="lazy">
+                </div>
+
+                <!-- Mercado Libre -->
+                <div class="logo-item">
+                    <img src="https://logodownload.org/wp-content/uploads/2016/10/mercadolibre-logo-1-1.png" 
+                         alt="Mercado Libre"
+                         loading="lazy">
+                </div>
+
+                <!-- Coca-Cola -->
+                <div class="logo-item">
+                    <img src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Coca-Cola.png" 
+                         alt="Coca-Cola"
+                         loading="lazy">
+                </div>
+
+                <!-- Santander -->
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Santander_logo.svg/1280px-Santander_logo.svg.png" 
+                         alt="Santander"
+                         loading="lazy">
+                </div>
+
+                <!-- Techint -->
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Techint_logo.svg/1280px-Techint_logo.svg.png" 
+                         alt="Techint"
+                         loading="lazy">
+                </div>
+
+                <!-- Arcor -->
+                <div class="logo-item">
+                    <img src="https://logodownload.org/wp-content/uploads/2020/02/arcor-logo-0.png" 
+                         alt="Arcor"
+                         loading="lazy">
+                </div>
+
+                <!-- Telecom -->
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Telecom_Argentina.svg/1280px-Telecom_Argentina.svg.png" 
+                         alt="Telecom Argentina"
+                         loading="lazy">
+                </div>
+            </div>
+
+            <!-- Texto adicional de confianza -->
+            <div class="section-footer fade-up delay-3" style="text-align: center; margin-top: 3rem;">
+                <p>
+                    <span>✦</span> Y muchas otras empresas líderes en Argentina y Latinoamérica <span>✦</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECCIÓN 2: SERVICIOS ================= -->
+    <div id="section-servicios" class="content-section">
+        <div class="section-container">
+            <div class="close-section" onclick="hideAllSections(); document.getElementById('hero-main').style.display = 'grid'; window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+            
+            <h2>Servicios <span>profesionales</span></h2>
+            <p class="subtitulo-seccion">
+                Asesoramiento legal personalizado con honorarios transparentes. Cada caso es único y recibe atención exclusiva.
+            </p>
+
+            <div class="servicios-grid">
+                
+                <!-- Servicio 1: Asesoramiento Empresarial -->
+                <div class="servicio-card">
+                    <div class="servicio-icono">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3>Asesoramiento empresarial</h3>
+                    <p>Consultoría legal para empresas, estructuración societaria, cumplimiento normativo y prevención de conflictos.</p>
+                    <div class="precio-box">
+                        <span class="precio-label">Honorario:</span>
+                        <span class="precio-valor">$85.000 - $250.000 ARS</span>
+                        <span class="precio-nota">(por consultoría mensual)</span>
+                    </div>
+                    <ul class="servicio-lista">
+                        <li>✓ Constitución de empresas</li>
+                        <li>✓ Due diligence corporativo</li>
+                        <li>✓ Cumplimiento normativo</li>
+                        <li>✓ Gobierno corporativo</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 2: Contratos Comerciales -->
+                <div class="servicio-card">
+                    <div class="servicio-icono">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Contratos comerciales</h3>
+                    <p>Redacción, revisión y negociación de contratos para proteger sus intereses comerciales.</p>
+                    <div class="precio-box">
+                        <span class="precio-label">Honorario:</span>
+                        <span class="precio-valor">$45.000 - $180.000 ARS</span>
+                        <span class="precio-nota">(por contrato)</span>
+                    </div>
+                    <ul class="servicio-lista">
+                        <li>✓ Contratos de alquiler</li>
+                        <li>✓ Acuerdos de confidencialidad</li>
+                        <li>✓ Contratos de servicios profesionales</li>
+                        <li>✓ Contratos de distribución</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 3: Derecho Civil -->
+                <div class="servicio-card">
+                    <div class="servicio-icono">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Derecho civil</h3>
+                    <p>Litigios civiles, sucesiones, daños y perjuicios. Representación en todas las instancias.</p>
+                    <div class="precio-box">
+                        <span class="precio-label">Honorario:</span>
+                        <span class="precio-valor">15% - 25%</span>
+                        <span class="precio-nota">(del monto recuperado + tasas)</span>
+                    </div>
+                    <ul class="servicio-lista">
+                        <li>✓ Sucesiones y testamentos</li>
+                        <li>✓ Responsabilidad civil</li>
+                        <li>✓ Daños y perjuicios</li>
+                        <li>✓ Acciones posesorias</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 4: Defensa Patrimonial -->
+                <div class="servicio-card">
+                    <div class="servicio-icono">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                            <path d="M12 3L3 8l9 5 9-5-9-5zM3 16l9 5 9-5M3 12l9 5 9-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Defensa patrimonial</h3>
+                    <p>Estrategias de protección de activos, blindaje patrimonial y planificación sucesoria.</p>
+                    <div class="precio-box">
+                        <span class="precio-label">Honorario:</span>
+                        <span class="precio-valor">$120.000 - $400.000 ARS</span>
+                        <span class="precio-nota">(estructura completa)</span>
+                    </div>
+                    <ul class="servicio-lista">
+                        <li>✓ Blindaje de bienes personales</li>
+                        <li>✓ Planificación patrimonial</li>
+                        <li>✓ Protección de activos empresariales</li>
+                        <li>✓ Fideicomisos</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 5: Consultoría Continua -->
+                <div class="servicio-card">
+                    <div class="servicio-icono">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Consultoría continua</h3>
+                    <p>Asesoramiento legal permanente para empresas y profesionales con atención prioritaria.</p>
+                    <div class="precio-box">
+                        <span class="precio-label">Honorario:</span>
+                        <span class="precio-valor">$150.000 - $350.000 ARS</span>
+                        <span class="precio-nota">(retención mensual)</span>
+                    </div>
+                    <ul class="servicio-lista">
+                        <li>✓ Asesoramiento ilimitado</li>
+                        <li>✓ Urgencias 24/7</li>
+                        <li>✓ Revisiones contractuales</li>
+                        <li>✓ Informes legales mensuales</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 6: Mediación y Arbitraje -->
+                <div class="servicio-card">
+                    <div class="servicio-icono">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                            <path d="M20 12H4M12 4v16M4 4h16M4 20h16" stroke="#C9A14B"/>
+                            <circle cx="12" cy="12" r="2" fill="#C9A14B"/>
+                        </svg>
+                    </div>
+                    <h3>Mediación y arbitraje</h3>
+                    <p>Resolución alternativa de conflictos para evitar litigios prolongados.</p>
+                    <div class="precio-box">
+                        <span class="precio-label">Honorario:</span>
+                        <span class="precio-valor">$70.000 - $200.000 ARS</span>
+                        <span class="precio-nota">(por mediación)</span>
+                    </div>
+                    <ul class="servicio-lista">
+                        <li>✓ Mediación prejudicial</li>
+                        <li>✓ Arbitraje comercial</li>
+                        <li>✓ Acuerdos extrajudiciales</li>
+                        <li>✓ Conciliación laboral</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p class="nota-final">Los honorarios pueden variar según la complejidad del caso. Consulte presupuesto personalizado sin cargo.</p>
+                <button class="btn-principal" style="margin-top: 2rem;" onclick="showSection('contacto');">Solicitar presupuesto</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SECCIÓN 3: EXPERIENCIA ================= -->
+    <div id="section-experiencia" class="content-section">
+        <div class="section-container">
+            <div class="close-section" onclick="hideAllSections(); document.getElementById('hero-main').style.display = 'grid'; window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+            
+            <h2>Casos <span>destacados</span></h2>
+            <p class="subtitulo-seccion-experiencia">
+                Más de 18 años de trayectoria nos respaldan. Estos son algunos de los casos más relevantes que hemos resuelto con éxito.
+            </p>
+
+            <div class="casos-grid">
+                
+                <!-- Caso 1 -->
+                <div class="caso-card">
+                    <div class="caso-header">
+                        <div class="caso-badge">2024</div>
+                        <div class="caso-icono">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Conflicto societario entre accionistas de empresa familiar</h3>
+                    <p>Resolución exitosa mediante mediación, evitando litigio judicial. Se logró un acuerdo que permitió la continuidad operativa de la empresa y la compra de participación accionaria.</p>
+                    <div class="caso-monto">Monto recuperado: $45.000.000 ARS</div>
+                </div>
+
+                <!-- Caso 2 -->
+                <div class="caso-card">
+                    <div class="caso-header">
+                        <div class="caso-badge">2023</div>
+                        <div class="caso-icono">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Daños y perjuicios por incumplimiento contractual</h3>
+                    <p>Representación exitosa de empresa constructora. Se obtuvo sentencia favorable con condena al pago de indemnización por incumplimiento de contrato de obra.</p>
+                    <div class="caso-monto">Monto recuperado: $32.500.000 ARS</div>
+                </div>
+
+                <!-- Caso 3 -->
+                <div class="caso-card">
+                    <div class="caso-header">
+                        <div class="caso-badge">2024</div>
+                        <div class="caso-icono">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Defensa en juicio ejecutivo por deuda empresarial</h3>
+                    <p>Se logró la nulidad del título ejecutivo y se obtuvo quita del 70% de la deuda, permitiendo la continuidad de la pyme.</p>
+                    <div class="caso-monto">Monto ahorrado: $28.000.000 ARS</div>
+                </div>
+
+                <!-- Caso 4 -->
+                <div class="caso-card">
+                    <div class="caso-header">
+                        <div class="caso-badge">2022</div>
+                        <div class="caso-icono">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Conflicto laboral colectivo (30 empleados)</h3>
+                    <p>Mediación exitosa con el sindicato, evitando paro total y logrando acuerdo beneficioso para ambas partes.</p>
+                    <div class="caso-monto">Acuerdo conciliatorio favorable</div>
+                </div>
+
+                <!-- Caso 5 -->
+                <div class="caso-card">
+                    <div class="caso-header">
+                        <div class="caso-badge">2024</div>
+                        <div class="caso-icono">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M4 4h16v16H4zM8 8h8M8 12h6M8 16h4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Sucesión internacional con bienes en Argentina y España</h3>
+                    <p>Coordinación exitosa con abogados españoles. Se logró la homologación del testamento y distribución de bienes en tiempo récord.</p>
+                    <div class="caso-monto">Resolución en 8 meses</div>
+                </div>
+
+                <!-- Caso 6 -->
+                <div class="caso-card">
+                    <div class="caso-header">
+                        <div class="caso-badge">2023</div>
+                        <div class="caso-icono">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M20 12H4M12 4v16M4 4h16M4 20h16" stroke="#C9A14B"/>
+                                <circle cx="12" cy="12" r="2" fill="#C9A14B"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Arbitraje comercial por incumplimiento de distribución</h3>
+                    <p>Laudo arbitral favorable con reconocimiento de daños emergentes y lucro cesante.</p>
+                    <div class="caso-monto">Monto recuperado: $52.000.000 ARS</div>
+                </div>
+
+                <!-- Caso 7 -->
+                <div class="caso-card">
+                    <div class="caso-header">
+                        <div class="caso-badge">2024</div>
+                        <div class="caso-icono">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M12 3L3 8l9 5 9-5-9-5zM3 16l9 5 9-5M3 12l9 5 9-5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Estructura de blindaje patrimonial para empresario</h3>
+                    <p>Creación de fideicomiso y sociedad para protección de activos ante eventuales contingencias.</p>
+                    <div class="caso-monto">Patrimonio protegido: $180.000.000 ARS</div>
+                </div>
+
+                <!-- Caso 8 -->
+                <div class="caso-card">
+                    <div class="caso-header">
+                        <div class="caso-badge">2022</div>
+                        <div class="caso-icono">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Desalojo comercial de local abusivo</h3>
+                    <p>Obtención de medida cautelar y sentencia favorable en menos de 6 meses.</p>
+                    <div class="caso-monto">Restitución del inmueble + costas</div>
+                </div>
+
+                <!-- Caso 9 -->
+                <div class="caso-card">
+                    <div class="caso-header">
+                        <div class="caso-badge">2023</div>
+                        <div class="caso-icono">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Reestructuración de deuda corporativa</h3>
+                    <p>Negociación exitosa con 5 acreedores, obteniendo quitas del 60% y plazos extendidos.</p>
+                    <div class="caso-monto">Deuda reestructurada: $95.000.000 ARS</div>
+                </div>
+
+                <!-- Caso 10 -->
+                <div class="caso-card">
+                    <div class="caso-header">
+                        <div class="caso-badge">2024</div>
+                        <div class="caso-icono">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M12 2L15 8.5L22 9.5L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9.5L9 8.5L12 2Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Defensa en caso de responsabilidad civil médica</h3>
+                    <p>Demostración de lex artis, obteniendo sentencia absolutoria para el profesional médico.</p>
+                    <div class="caso-monto">Sentencia favorable con costas</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p class="nota-final-experiencia">Resultados obtenidos en el marco de nuestra trayectoria profesional. Cada caso es único.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SECCIÓN 4: CLIENTES ================= -->
+    <div id="section-clientes" class="content-section">
+        <div class="section-container">
+            <div class="close-section" onclick="hideAllSections(); document.getElementById('hero-main').style.display = 'grid'; window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+            
+            <h2>Empresas que <span>confían en nosotros</span></h2>
+            <p class="subtitulo-seccion-clientes">
+                Más de 350 clientes corporativos han depositado su confianza en nuestro asesoramiento legal.
+            </p>
+
+            <div class="clientes-grid">
+                
+                <!-- Cliente 1: Toyota -->
+                <div class="cliente-card">
+                    <div class="cliente-logo">
+                        <img src="https://1000marcas.net/wp-content/uploads/2019/11/Toyota-Logo-1990.png" 
+                             alt="Toyota"
+                             loading="lazy">
+                    </div>
+                    <span class="cliente-nombre">Toyota Argentina</span>
+                </div>
+
+                <!-- Cliente 2: Samsung -->
+                <div class="cliente-card">
+                    <div class="cliente-logo">
+                        <img src="https://1000marcas.net/wp-content/uploads/2019/12/Samsung-Logo-2015.png" 
+                             alt="Samsung"
+                             loading="lazy">
+                    </div>
+                    <span class="cliente-nombre">Samsung Electronics</span>
+                </div>
+
+                <!-- Cliente 3: Mercado Libre -->
+                <div class="cliente-card">
+                    <div class="cliente-logo">
+                        <img src="https://logodownload.org/wp-content/uploads/2016/10/mercadolibre-logo-1-1.png" 
+                             alt="Mercado Libre"
+                             loading="lazy">
+                    </div>
+                    <span class="cliente-nombre">Mercado Libre</span>
+                </div>
+
+                <!-- Cliente 4: Coca-Cola -->
+                <div class="cliente-card">
+                    <div class="cliente-logo">
+                        <img src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Coca-Cola.png" 
+                             alt="Coca-Cola"
+                             loading="lazy">
+                    </div>
+                    <span class="cliente-nombre">Coca-Cola FEMSA</span>
+                </div>
+
+                <!-- Cliente 5: Santander -->
+                <div class="cliente-card">
+                    <div class="cliente-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Santander_logo.svg/1280px-Santander_logo.svg.png" 
+                             alt="Santander"
+                             loading="lazy">
+                    </div>
+                    <span class="cliente-nombre">Banco Santander</span>
+                </div>
+
+                <!-- Cliente 6: Techint -->
+                <div class="cliente-card">
+                    <div class="cliente-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Techint_logo.svg/1280px-Techint_logo.svg.png" 
+                             alt="Techint"
+                             loading="lazy">
+                    </div>
+                    <span class="cliente-nombre">Techint</span>
+                </div>
+
+                <!-- Cliente 7: Arcor -->
+                <div class="cliente-card">
+                    <div class="cliente-logo">
+                        <img src="https://logodownload.org/wp-content/uploads/2020/02/arcor-logo-0.png" 
+                             alt="Arcor"
+                             loading="lazy">
+                    </div>
+                    <span class="cliente-nombre">Grupo Arcor</span>
+                </div>
+
+                <!-- Cliente 8: Telecom Argentina -->
+                <div class="cliente-card">
+                    <div class="cliente-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Telecom_Argentina.svg/1280px-Telecom_Argentina.svg.png" 
+                             alt="Telecom Argentina"
+                             loading="lazy">
+                    </div>
+                    <span class="cliente-nombre">Telecom Argentina</span>
+                </div>
+
+                <!-- Cliente 9: Grupo Clarín -->
+                <div class="cliente-card">
+                    <div class="cliente-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Grupo_Clar%C3%ADn_logo.svg/1280px-Grupo_Clar%C3%ADn_logo.svg.png" 
+                             alt="Grupo Clarín"
+                             loading="lazy">
+                    </div>
+                    <span class="cliente-nombre">Grupo Clarín</span>
+                </div>
+
+                <!-- Cliente 10: Banco Macro -->
+                <div class="cliente-card">
+                    <div class="cliente-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Banco_Macro_logo.svg/1280px-Banco_Macro_logo.svg.png" 
+                             alt="Banco Macro"
+                             loading="lazy">
+                    </div>
+                    <span class="cliente-nombre">Banco Macro</span>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p class="nota-final-clientes">Y muchas otras empresas líderes en Argentina y Latinoamérica</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SECCIÓN 5: CONTACTO ================= -->
+    <div id="section-contacto" class="content-section">
+        <div class="section-container">
+            <div class="close-section" onclick="hideAllSections(); document.getElementById('hero-main').style.display = 'grid'; window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+            
+            <h2>Solicite su <span>consulta legal</span></h2>
+            <p class="subtitulo-seccion-contacto">
+                Complete el formulario y reciba asesoramiento personalizado. Le responderemos a la brevedad.
+            </p>
+
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    <div class="info-card">
+                        <div class="info-icono">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-texto">
+                            <h4>Ubicación</h4>
+                            <p>San Miguel de Tucumán, Argentina</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icono">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="info-texto">
+                            <h4>Email</h4>
+                            <p>contacto@estudiofigueroa.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icono">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="info-texto">
+                            <h4>WhatsApp</h4>
+                            <p>+54 381 335 1497</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contacto-form" id="formularioContacto" action="https://formsubmit.co/tecnocommercee@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Nueva consulta legal - Estudio Figueroa">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://tecnommerce.com/gracias.html">
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="+54 381 000-0000">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="asesoramiento-empresarial">Asesoramiento empresarial</option>
+                            <option value="contratos-comerciales">Contratos comerciales</option>
+                            <option value="derecho-civil">Derecho civil</option>
+                            <option value="defensa-patrimonial">Defensa patrimonial</option>
+                            <option value="consultoria-continua">Consultoría continua</option>
+                            <option value="mediacion-arbitraje">Mediación y arbitraje</option>
+                            <option value="otro">Otro servicio</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Describa brevemente su consulta..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacidad" required>
+                            <span>Acepto la <a href="#" style="color: #C9A14B;">política de privacidad</a> y el tratamiento de mis datos</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar">Enviar consulta</button>
+                </form>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <p class="nota-final-contacto">También puede contactarnos directamente vía WhatsApp al +54 381 335 1497</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SECCIÓN 6: FOOTER ================= -->
+    <div id="section-footer" class="footer-section">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <h3>Estudio Jurídico Figueroa<span>Dr. Alejandro Figueroa</span></h3>
+                    <div class="ubicacion">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>San Miguel de Tucumán, Argentina</span>
+                    </div>
+                    <div class="email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A14B" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <a href="mailto:contacto@estudiofigueroa.com">contacto@estudiofigueroa.com</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Información legal</h4>
+                    <ul>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Protección de datos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Contacto rápido</h4>
+                    <div class="social-buttons">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/543813351497" class="social-btn whatsapp" aria-label="WhatsApp" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" class="social-btn instagram" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="#" class="social-btn facebook" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <!-- Gmail -->
+                        <a href="mailto:contacto@estudiofigueroa.com" class="social-btn gmail" aria-label="Gmail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <p>Atención personalizada y confidencial<br><span>Respuesta en 24h hábiles</span></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <span>© 2025 Estudio Jurídico Figueroa</span>
+                    <span>|</span>
+                    <a href="#">Aviso legal</a>
+                    <span>|</span>
+                    <span>Todos los derechos reservados</span>
+                </div>
+                <div class="tecnommerce">
+                    Página web creada por <span>Tecnommerce</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
